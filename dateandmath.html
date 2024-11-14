@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        h1{
+            text-align: center;
+            font-size: 5em;
+        }
+    </style>
+    <script>
+        function clock()
+        {
+            var i=0;
+            var intervalId = setInterval(()=> {
+                if(i>0 && i%5==0)
+                    alert("Game Over");
+                var date = new Date();
+                var hours = date.getHours();
+                var minutes = date.getMinutes();
+                var seconds = date.getSeconds();
+                var ampm = hours >= 12 ? 'PM' : 'AM';
+                hours = hours % 12;
+                hours = hours ? hours : 12; // the hour '0' should be '12'
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                seconds = seconds < 10 ? '0' + seconds : seconds;
+                document.getElementById('id').innerHTML=hours+":"+minutes+":"+seconds+":"+ampm;
+                i+=1;
+            }, 1000 );
+
+        }
+    </script>
+</head>
+<body onload="clock()">
+    <h1 id="id"></h1>
+</body>
+</html>

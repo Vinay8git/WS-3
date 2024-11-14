@@ -1,0 +1,9 @@
+headings.html
+
+<html>
+  <head><title>Headings and
+  paragraphs</title></head>
+  <body>
+      <a href="W2.html#bottom">Go To Bottom Of W2 File</a>
+  <body>
+<html>

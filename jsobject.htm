@@ -1,0 +1,54 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        emp={id:111, Student:"Dua Lipa", salary: 40000}
+        document.write(emp.id+" "+emp.Student+" "+emp.salary);
+    </script>
+</body>
+</html> -->
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        var emp=new Object();
+        emp.id=10;
+        emp.name= "Vinay Yadav";
+        emp.salary=12000000;
+        document.write(emp.id+" "+emp.name+" "+emp.salary);
+    </script>
+</body>
+</html> -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object</title>
+</head>
+<body>
+    <script>
+        function emp(id, name, sal){
+            this.id=id;
+            this.name=name;
+            this.sal=sal;
+        }
+        e=new emp(111, "Vinay", 12000000);
+        document.write(e.id+" "+e.name+" "+e.sal);
+    </script>
+</body>
+</html>

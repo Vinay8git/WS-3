@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS Lec-1</title>
+    <script type="text/Javascript">
+        function test(a) {
+            // var a=prompt("Enter a no.");
+            if(a%2==0 && a!=0)
+            {
+                document.write("<body bgcolor='blue'>");
+                document.write("<h1>Welcome</h1>");
+            }
+            else if(a==0){
+                document.write("<body bgcolor='red'>");
+                document.write("<h1>Error</h1>");
+            }
+            else{
+                document.write("<body bgcolor='grey'>");
+                document.write("<h1>Get Out</h1>");
+            }
+            
+        }
+    </script>
+</head>
+<body onload="test(3)"> 
+    
+</body>
+</html>

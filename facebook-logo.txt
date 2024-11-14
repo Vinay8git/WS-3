@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<style>
+.box
+{
+
+border:0px;
+width:700px;
+height:500px;
+color:blue;
+padding:25px;
+margin:0;
+border-radius:40px;
+background-color:blue;
+text-align:center;
+
+}
+
+h1
+{
+width:300px;
+height:400px;
+}
+
+</style>
+</head>
+<body>
+<div class="box">
+   <h1>f</h1>
+</div>    
+</body>
+</html>

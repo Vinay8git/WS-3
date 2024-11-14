@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            margin-left:0;
+            padding: 0;
+            margin-bottom: 50px;
+            cursor: pointer;
+        }
+    </style>
+    <script>
+        function test()
+        {
+            alert("Hello You,re Caught");
+        }
+        function change(){
+            var a=document.f1.fname;
+            a.value=a.value.toUpperCase();
+        }
+    </script>
+</head>
+<body>
+    <input type="button" value="Click Me!" onclick="test()">
+    <img src="fb.png" alt="" ondblclick="test()">
+    <input type="button" value="Hover Over Me!" onmouseover="test()">
+    <form name="f1">
+        Enter Name:<input type="text" name="fname" onblur="change()"></input>
+    </form>
+    
+</body>
+</html>

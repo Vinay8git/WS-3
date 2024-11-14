@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TAble</title>
+    <script>
+        function tab()
+        {
+            var n=parseInt(prompt("Enter A Number"));
+            // var b=parseInt(prompt("Enter A Number"));
+            var a=0;
+            var b=1;
+            var c;
+            document.write("<h1>"+a+"<br>"+b+"</h1>");
+            for(var i=1;i<=10000;i++)
+            {
+                c=a+b;
+                a=b;
+                b=c;
+                document.write("<h1>"+c+"</h1>");
+            }
+        }
+    </script>
+</head>
+<body onload="tab()">
+    
+</body>
+</html>

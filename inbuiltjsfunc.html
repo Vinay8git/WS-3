@@ -1,0 +1,52 @@
+<html>
+<script language="javascript">
+
+var arr=new Array(5);
+var num=new Array(5);
+var s= "Array Example";
+
+s.fontsize(20);
+document.write("<center> "+ s.fontcolor("Blue") +"</center><br>");
+
+for(i=0;i<5;i++)
+{
+arr[i]=prompt("Enter elements for first array ","");
+}
+
+
+document.write("Element of first array<br>");
+for(i=0;i<5;i++)
+{
+document.write(arr[i] +"<br>");
+}
+document.write("Reverse of the given array " +arr.reverse() +"<br>");
+document.write("Sorted array is :" +arr.sort() +"<br>");
+document.write("Listing of the given array:" +arr.join() +"<br>");
+document.write(typeof(arr.join())+"<br><br>");
+
+
+for(i=0;i<5;i++)
+{
+num[i]=prompt("Enter elements for second array","");
+}
+
+document.write("Element of second array"+"<br>");
+for(i=0;i<5;i++)
+{
+document.write(num[i] +"<br>");
+}
+
+document.write("Concatenation of two array:" +arr.concat(num) +"<br>");
+var ss=new Array();
+ss=num.slice(0,4);
+document.write("After Using Slice() :" +ss.join() +"<br>");
+arr.push(20);
+document.write("After pushing data:" +arr.join() +"<br>");
+document.write("Using Pop() :" +arr.pop() +"<br>");
+document.write("After using pop() in 'arr' array:" +arr.join() +"<br>");
+arr.unshift(100);
+document.write("After using unshift :"+arr.join() +"<br>");
+arr.shift();
+document.write("after using shift :" +arr.join() +"<br>");
+</script>
+</html>

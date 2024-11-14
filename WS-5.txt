@@ -1,0 +1,11 @@
+<html>
+   <head>
+   </head>
+
+   <body>
+      <form>
+         <input type="text" name="uname" placeholder="Enter Username">
+      </form>
+   </body>
+
+</html>

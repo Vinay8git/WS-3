@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h2{
+            color: red;
+        }
+    </style>
+    <script>
+        function check()
+        {
+            // alert("Check");
+            var x=document.getElementById("uname").value;
+            for(var i=0;i<x.length;i++)
+            {
+                console.log("loops");
+                if(x.charAt(i)>='0' && x.charAt(i)<='9')
+                {
+                    var i=document.getElementById("mypara");
+                    i.innerHTML="Enter Only Letters";
+                    return;
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    <form>
+        <h2 id="mypara"></h2><br>
+        Enter Username:<input type="text" id="uname" onblur="check()"><br><br>
+        Enter Password:<input type="password" id="pw"><br><br><br><br><br>
+    </form>
+</body>
+</html>
